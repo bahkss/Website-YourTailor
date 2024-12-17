@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <!-- Navbar with clickable buttons -->
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
+    <div class="nav-buttons">
+      <button onclick="navigateToSection('home')">Home</button>
+      <button onclick="navigateToSection('services')">Services</button>
+      <button onclick="navigateToSection('about')">About Us</button>
+      <button onclick="navigateToSection('contact')">Contact Us</button>
+    </div>
+    <div class="auth-buttons">
+      <button onclick="loadPage('Login.html')">Log In</button>
+      <button onclick="loadPage('Signup.html')">Sign Up</button>
+    </div>
+  </nav>
+
+  <!-- Main Homepage Content -->
+  <div class="homepage-content">
+    <h1>Welcome to Our Platform</h1>
+    <p>Discover amazing services and connect with us!</p>
+    <button class="get-started" onclick="loadPage('Signup.html')">Get Started</button>
+  </div>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <h2>Our Sewing Services</h2>
+  <div class="services-container">
+    <!-- Service 1 -->
+    <div class="service-card">
+      <img src="images/CustomTailoring.png" alt="Custom Tailoring">
+      <h3>Custom Tailoring</h3>
+      <p>Get perfectly fitted custom clothing tailored to your needs.</p>
+    </div>
+    <!-- Service 2 -->
+    <div class="service-card">
+      <img src="images/AlterationServices.png" alt="Alteration Services">
+      <h3>Alteration Services</h3>
+      <p>Expert alterations to ensure your clothes fit like a dream.</p>
+    </div>
+    <!-- Service 3 -->
+    <div class="service-card">
+      <img src="images/Embroidery.jpeg" alt="Embroidery">
+      <h3>Embroidery</h3>
+      <p>Beautiful, intricate embroidery to enhance your garments.</p>
+    </div>
+  </div>
+</section>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

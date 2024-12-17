@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YourTailor Services</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <!-- Header Section -->
+<!-- Upper Footer Section (previously Header) -->
+<style>
+  body {
+    font-family: Inria Serif;
+    background-color: #FDF1E4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #514644;
+    padding: 20px 0;
+  }
+
+  /* Top Row */
+  .upper-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+  }
+
+  .social-media a {
+    margin-left: 10px;
+  }
+
+  .social-media img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .right-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .right-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-links a .link-icon {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ccc;
+    object-fit: cover;
+  }
+
+  .upper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #A89384;
+    padding: 10px;
+    border-radius: 0px;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 auto; /* Center the search bar horizontally */
+  }
+
+  .search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+  }
+
+  .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-btn img {
+    width: 16px;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    object-fit: cover;
+  }
+
+  .sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #FDF1E4;
+    border-radius: 5px;
+  }
+
+  /* Sidebar profile container */
+  .sidebar-profile {
+    display: flex; /* Arrange image and text horizontally */
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; 
+    margin: 20px 0; /* Space above and below the profile section */
+  }
+
+  /* Sidebar image style */
+  .sidebar-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+
+  /* Profile text container */
+  .profile-text {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Align text vertically */
+    gap: 4px;
+  }
+
+  /* Profile name style */
+  .profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    color: #333;
+  }
+
+  /* Edit Profile link style */
+  .edit-profile {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none; /* Remove underline */
+  }
+
+  .edit-profile:hover {
+    text-decoration: underline; /* Underline the link on hover */
+  }
+
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu-item {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+  }
+
+  .menu-item.active {
+    background-color: #ddd;
+  }
+
+  .products {
+    flex: 3;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  .products h1 {
+    font-family: Inria Serif, serif;
+    font-size: 36px;
+  }
+
+  .product-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .image-card {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+  }
+
+  .description-title{
+    font-family: Inria Serif, serif;
+    font-size: 20px;
+  }
+
+  .description-infos{
+    font-family: Inria Serif, serif;
+    font-size: 15px;
+  }
+
+  .footer {
+    background-color: #FDF1E4;
+    padding: 20px;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-columns div {
+    flex: 1;
+  }
+
+  .footer h3 {
+    font-family: Inria Sans, sans-serif;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 5px 0;
+  }
+
+  .footer img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+
+</style>
+</head>
+<body>
+<div class="header-container">
+  <!-- Top Row -->
+  <div class="upper-footer-top">
+    <!-- Social Media Links (Left Side) -->
+    <div class="social-media">
+      <span style="font-size: 16px; font-family: Inria Serif;">Follow us on</span>
+      <a href="https://www.facebook.com/facebook/"><img src="images/Facebook.jpg" alt="Facebook"></a>
+      <a href="https://www.instagram.com/instagram/"><img src="images/Instagram.jpg" alt="Instagram"></a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-links">
+      <a href="booking_form.php" class="appointment-link" style="font-family: Inria Serif;">
+        <img src="images/booking.png" alt="Phone Icon" class="link-icon">
+        <span>Book Appointment</span>
+      </a>
+      <a href="faq.html" class="faq-link" style="font-family: Inria Serif;">
+        <img src="images/faq.png" alt="FAQ Icon" class="link-icon">
+        <span>FAQ</span>
+      </a>
+      <a href="edit_profile.php" class="profile-link" style="font-family: Inria Serif;">
+        <img src="images/profile.jpg" alt="Profile Image" class="link-icon">
+        <span>Mia_02</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom Row -->
+  <div class="upper-footer">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="Logo">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search by service" style="font-family: Inria Serif;">
+      <button class="search-btn">
+        <img src="images/search.png" alt="Search Icon">
+      </button>
+    </div>
+  </div>
+</div>  
+
+  <!-- Main Section -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Sidebar Section -->
+      <section class="sidebar">
+          <!-- Sidebar Section -->
+          <div class="sidebar">
+            <img src="images/profile.jpg" alt="Profile Picture" class="sidebar-image">
+            <div class="profile-text">
+              <p class="profile-name">Mia_02</p>
+              <a href="edit_profile.php" class="edit-profile">Edit Profile</a>
+            </div>
+          </div>
+        
+          <!-- Navigation Menu -->
+          <ul class="menu">
+            <li><a href="traditional_service.html" class="menu-item active">Traditional & Cultural Clothing</a></li>
+            <li><a href="dress_service.html" class="menu-item">Woman's Dresses & Evening Wear</a></li>
+            <li><a href="custom_service.html" class="menu-item">Custom Tailoring</a></li>
+            <li><a href="alteration_service.html" class="menu-item">Alteration & Repairing</a></li>
+            <li><a href="uniform_service.html" class="menu-item">Uniform Tailoring</a></li>
+          </ul>
+      </section>
+        
+          <section class="products">
+            <h1>Traditional & Cultural Clothing</h1>
+            <div class="product-card">
+              <div class="image-card">
+                <img src="images/BajuKurungModen.jpg" alt="Baju Kurung Moden">
+              </div>
+              <div class="description-card">
+                <div class="description-title">
+                    <p>Baju Kurung Moden</p>
+                </div>
+                <div class="description-infos">
+                    <p>Estimated Range Price: RM20 - RM70</p>
+                    <p>Time needed to tailor cloth: 8 days</p>
+                    <p>The price and the time can be negotiated once again. Do contact if needed.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+    
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h3 style="font-family:Inria Sans;">Customer Service</h3>
+        <ul>
+          <li><a href="#" style="font-family:Inria Sans;">Help Centre</a></li>
+          <li><a href="#" style="font-family:Inria Sans;">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-family:Inria Sans;">About YourTailor</h3>
+        <ul>
+          <li><a href="#" style="font-family:Inria Sans;">About Us</a></li>
+          <li><a href="#" style="font-family:Inria Sans;">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-family:Inria Sans;">Payment</h3>
+        <ul>
+          <li><a href="#" style="font-family:Inria Sans;">Cash</a></li>
+          <li><a href="#" style="font-family:Inria Sans;">Online Payment</a></li>
+          <li><a href="#" style="font-family:Inria Sans;">Credit Card</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-family:Inria Sans;">Follow Us</h3>
+        <ul>
+          <li><a href="#" style="font-family:Inria Sans;">Facebook</a></li>
+          <li><a href="#" style="font-family:Inria Sans;">Instagram</a></li>
+          <li><a href="#" style="font-family:Inria Sans;">YouTube</a></li>
+          <li><a href="#" style="font-family:Inria Sans;">X</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

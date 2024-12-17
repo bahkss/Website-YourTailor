@@ -1,0 +1,1169 @@
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #333;
+}
+
+  .container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://s3-alpha-sig.figma.com/img/c0dc/3e01/5f4040e5813c3ffb0c7ad12d9b5a6a01?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cZxklEvsj9O3g-gkq9gyA7JvOr0lxQTXYOS79ggfOcV5rXq8FGZ1i~O5iOFvPmK2cRhSXV966qPTUHKwxMnfxGEtLjhtcoEOPmYkgaOI~Tg1-49-9ufol2W1aMjzUuIIQfVHZmFTkkHgpqGgcZI4nBJoGl5BwJKv4IchRJV3PzgAdxQYrOsCUjUFWpNp9dlq9TYmk9xuNGktj4Bm7ACAIYutc-X0xuZH9HhPfhVUvTfN~b9wQ5A~D9RlKxvWCyN0cjEC0CTy6XE78OgcyI3D5N1Fx13BF4dyLpmgItA8AQMPH7QZgjfg3k0ssde7T1XJJIRPW1YObYr1DVCpxgLkxQ__);
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+  
+/* Left Image Section */
+.side-image {
+  flex: 1; /* Takes 1 part of the space */
+  background-image: url(https://s3-alpha-sig.figma.com/img/3f38/5e6a/3e5986e7f8c6b614e37ceafbbebca637?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e-ECc31DA0vzdnwZdrZd1pC6Ha--CTLHtU8P3uaXJauQrdNcBxKxP8iCH19kqLfQgNCkgUCrlBzEmX-4qXBUkErkvqJAwNpjTkQVrtdnNdLuVbqrId6yV5HFxNbin2TSXNXbyxQZ-RHXgYaGA~WVLH6Tn6lnfdzxMK87K4syB0fTnbqcaztYk79fYpHVYbm017wU-A8JDR5-u8zm3aubHBKl6zAOpLMUqzwdgwCDR0pT7aRhplWQhAC~ISO-Q9t5Zf3WOTiaNWgrzNB~P~TbRZnROdfwfp-CHnuunXu3FEBo20NvGpzwyS9ybDxHw4y7W4eX3ih4eaD76udUnB34lg__); /* Replace with your image path */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+  .form-container {
+    flex: 1;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #888;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  a {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .forgot-password {
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+  background-color: #2f2f2f;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #444;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f8f8f8;
+}
+
+/* Navigation Buttons (Home, Services, etc.) */
+.nav-buttons {
+  display: inline-block;
+  gap: 15px;
+  
+}
+
+.nav-buttons button {
+  background-color: #5f6368;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-buttons button:hover {
+  background-color: #f1c40f;
+  transform: scale(1.05);
+}
+
+/* Authentication Buttons (Log In, Sign Up) */
+.auth-buttons {
+  display: inline-block;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-buttons button:hover {
+  background-color: #3498db;
+  transform: scale(1.05);
+}
+
+/* Main Content Styling */
+.homepage-content {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.homepage-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.homepage-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.get-started {
+  background-color: #27ae60;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-started:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-buttons {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .homepage-content h1 {
+    font-size: 40px;
+  }
+
+  .homepage-content p {
+    font-size: 16px;
+  }
+
+  .get-started {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+/* General Services Section Styling */
+.services-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2f2f2f;
+}
+
+/* Grid Layout for Services */
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+}
+
+.service-card h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.service-card p {
+  font-size: 1em;
+  padding: 0 10px 15px;
+}
+
+/* Reset and basic styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  color: #514644;
+  font-family: 'Jeju Gothic', sans-serif;
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: calc(100vh - 80px); /* Adjusts height to fill the viewport minus headers/footers */
+  text-align: center; /* Ensures text alignment */
+  background-color: #FBEBD4;
+  height: calc(100vh - 80px);
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Space between text and image */
+  align-items: center;
+  left: 10px;
+}
+
+/* Upper Footer (Header) */
+.upper-footer {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #514644; /* Matches the lower footer */
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.right-image {
+  position: absolute;
+  top: 110px;
+  right: 0;  /* Image is 110px from the top */
+   /* Image is 969px from the left */
+  width: 197px; /* Width of the image */
+  height: 342px; /* Height of the image */
+  border-top-left-radius: 1500px; /* Rounded top-left corner */
+  border-bottom-left-radius: 1500px; /* Rounded bottom-left corner */
+  object-fit: cover; /* Adds some space between the text and image */ /* Ensures the image scales without distorting */
+}
+
+.upper-footer .logo {
+  position: absolute; /* Allows the logo to stay on the left */
+  left: 20px; /* Adjusts logo position */
+}
+
+.upper-footer .logo img {
+  height: 50px;
+}
+
+.upper-footer .nav-buttons {
+  display: flex;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+.upper-footer .nav-buttons button {
+  font-family: Inria Serif;
+  background-color: #514644; /* Button background remains the same */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.upper-footer .nav-buttons button:hover {
+  background-color: #777;
+}
+
+/* Lower Footer */
+.lower-footer {
+  font-family: Inria Serif;
+  background-color: #514644; /* Matches the upper footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.lower-footer p {
+  font-family: Inria Serif;
+  margin: 0;
+}
+
+/* General Styles */
+body  {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust height for upper and lower footers */
+  background-color: #ffffff;
+  color: #514644;
+  text-align: center;
+  position: relative;
+  flex-direction: column; /* Stack sections vertically */
+  gap: 20px;
+  flex: 1;
+}
+
+/* Upper Footer (Header) */
+.upper-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #514644; /* Dark color for contrast */
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.upper-footer .nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.upper-footer .nav-buttons button { /* Gray button background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.upper-footer .nav-buttons button:hover {
+  background-color: #514644; /* Darker color on hover */
+}
+
+/* Lower Footer */
+.lower-footer {
+  background-color: #514644; /* Matches upper footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.lower-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Statistic Overview Section */
+.statistics {
+  margin-top: 30px;
+  background-color: #A89384;
+  border-radius: 0px;
+  padding: 20px;
+  width: 90%; /* Responsive width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statistics h2 {
+  font-family: Inknut Antiqua;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around; /* Evenly space out items */
+  gap: 15px;
+}
+
+.stat-item {
+  flex: 1;
+  background-color: #D9D9D9;
+  padding: 15px;
+  border-radius: 8px 0px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item h3 {
+  font-family: Inknut Antiqua;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #514644;
+}
+
+.stat-item p {
+  font-family: Inknut Antiqua;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Member's Request Overview Section */
+.member-request-section {
+  background-color: #ffffff; /* Light brown background */
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px; /* Adds spacing between sections */
+}
+
+.member-request-section h2 {
+  font-family: Inknut Antiqua;
+  font-size: 18px;
+  color: #514644; /* Dark brown for text */
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.action-buttons button {
+  font-family: Inknut Antiqua;
+  background-color: #514644; /* Dark brown background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0px;
+  font-size: 14px;
+}
+
+.request-table-container {
+  border-radius: 0px;
+  overflow-x: auto; /* Horizontal scroll for small screens */
+}
+
+.request-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Inknut Antiqua;
+}
+
+.request-table th, 
+.request-table td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-family: Inknut Antiqua;
+}
+
+.request-table thead {
+  background-color: white; /* Dark brown header */
+  color: black;
+}
+
+.view-more-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.view-more-btn {
+  background-color: #514644; /* Dark brown button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0px;
+  font-size: 14px;
+  font-family: Inknut Antiqua;
+}
+
+main {
+  padding: 20px;
+}
+
+h1{
+  display: flex;
+  justify-content: space-between;
+  font-family: Inknut Antiqua;
+  margin-right: 590px;
+  color:#000000;
+}
+/* Action buttons (Booking list, Time slot list) */
+.action-buttons {
+  display: flex;
+  justify-content: flex-start;  /* Align buttons to the left */
+  gap: 15px;
+  margin-left: 690px;
+  
+}
+
+.action-buttons button {
+  background-color: #514644;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.action-buttons button:hover {
+  background-color: #7b5a49;
+}
+
+/* Table styling */
+.booking-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.booking-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.booking-table th {
+  background-color: white;
+  color: black;
+  font-family: Inknut Antiqua;
+}
+
+.booking-table td {
+  background-color: #f9f9f9;
+}
+
+.booking-table .delete-btn {
+  font-family: Inknut Antiqua;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4d4d;
+}
+
+.booking-table .delete-btn:hover {
+  color: #cc0000;
+}
+
+/* Lower footer styling */
+.lower-footer {
+  background-color: #514644;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-buttons button {
+  margin: 0 10px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Main Section */
+.timeslot {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.add-time-container {
+  font-family: Instrument Serif;
+  color: white;
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #6D6B6C;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  font-family: Instrument Serif;
+}
+
+input[type="date"], input[type="time"] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  display: block;
+  font-family: Instrument Serif;
+  width: 100%;
+  padding: 10px;
+  background-color: #6D6B6C;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+h3.add_time{
+  color: #000000;
+  font-family: Instrument Serif;
+  margin-right: 380px;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+main {
+  margin-left: 0%; /* Match the sidebar width */
+  margin-right: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center; /* Centers the entire navigation bar horizontally */
+  align-items: center; /* Centers the items vertically */
+  gap: 20px; /* Adds space between the links */
+}
+
+.top-nav a {
+  font-family: Inria Serif;
+  display: flex;
+  align-items: center; /* Ensures both the image and text are vertically centered */
+  text-decoration: none; /* Removes the underline from links */
+  color: inherit; /* Inherits the text color */
+}
+
+.top-nav a img {
+  width: 24px; /* Adjust the width of the images */
+  height: 24px; /* Adjust the height of the images */
+  margin-right: 8px; /* Adds some space between the image and the text */
+  object-fit: contain; /* Ensures the images fit without distortion */
+  margin-right: 8px;
+}
+
+/* Header Section */
+.header {
+  background-color: #3e2f2a;
+  color: #fff;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.social-icons img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.top-nav a {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.header-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-right: 40px;
+}
+
+.search-bar button {
+  background-color: #fff;
+  right: 10px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 20px; /* Adjust size of the image */
+  height: 14px; /* Adjust size of the image */
+  object-fit: contain;
+}
+
+/* Main Section */
+.main-content {
+  background-color: #FBEBD4;
+  display: flex;
+  padding: 20px;
+}
+
+/* Sidebar Styles */
+/* Sidebar Styles */
+/* Sidebar Styles */
+.sidebar {
+  position: absolute; /* Fix sidebar on the left side */
+  top: 0; /* Align with the top of the viewport */
+  left: 0; /* Stick it to the left */
+  height: 100%; /* Full height of the viewport */
+  width: 20%; /* Sidebar width */
+  background-color: #FBEBD4;
+  padding: 20px;
+  overflow-y: auto; /* Add scroll if content overflows */
+  margin-left: 0px;
+}
+
+/* Sign In/Up Section */
+.sign-in {
+  font-family: Inria Sans;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sign-in .profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sign-in .sign-in-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Navigation Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  font-family: Inria Sans;
+  display: block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: left; /* Ensure left alignment */
+}
+
+.menu-item:hover {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.menu-item.active {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+
+.services {
+  width: 80%;
+  padding: 20px;
+  margin-left: 190px;
+  background-color: white;
+  
+}
+
+.services h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 60%; /* Make image fill the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the card without distortion */
+  border-bottom: 1px solid #ddd; /* Optional: adds a line between image and text */
+}
+
+.card h2 {
+  margin: 10px 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Footer Section */
+.footer {
+  color: #000;
+  background-color: #f9f5f2;
+  padding: 20px 50px;
+  font-family: Inria Sans;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-columns ul {
+  font-family: Inria Sans;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns li {
+  font-family: Inria Sans;
+  margin: 5px 0;
+}
+
+ .follow-us-section {
+      margin-bottom: 20px; /* Adds space between the "Follow us" section and the logo */
+    }
+
+    .follow-us {
+      font-family: Inria Sans;
+      display: flex;
+      justify-content: center; /* Centers the content horizontally */
+      align-items: center; /* Aligns the text and icons vertically */
+    }
+
+    .follow-us span {
+      font-family: Inria Sans;
+      font-family: 'Arial', sans-serif;
+      margin-right: 15px; /* Adds space between the text and the icons */
+    }
+
+    .follow-us a img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; /* Adds space between the icons */
+    }
+
+    .add-service-container {
+      font-family: Instrument Serif;
+      color: white;
+      width: 500px;
+      margin: 0 auto;
+      padding: 15px;
+      background-color: #6D6B6C;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .add-product-container {
+      font-family: Instrument Serif;
+      color: white;
+      width: 500px;
+      margin: 0 auto;
+      padding: 15px;
+      background-color: #6D6B6C;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    /* Label Styling */
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    /* Input Field Styling */
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    /* Textarea Styling */
+    textarea.input-field {
+      resize: vertical;
+      height: 80px;
+    }
+    
+    /* Add some responsiveness */
+@media (max-width: 768px) {
+  .add-service-container {
+    padding: 15px;
+  }
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker Blue for Hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.submit-btn:active {
+  background-color: #004085; /* Even darker blue for active state */
+  transform: scale(0.98); /* Slightly reduce size when clicked */
+}
+
+.button-container {
+  text-align: center; /* Center the button */
+  margin: 20px 0;
+}
+
+.logo-search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: url('https://s3-alpha-sig.figma.com/img/aeca/06df/055276bb5348f6f3bf52dc995ac079e0?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qfOxGDWoO6STH8Z-6FdH~V8y9pki0dVo72BCP6yZLPL8EANl4Eil8QsuHpYU9g2p-OkXvG53f7P6ybpR320Dtj5nv80WqDJE8l2ZhZeDm46tA3V0Xca7M-djXEXaHPQHrwveMJTJNcbMV~NF~TuhAUMIw~MqcwwL2-3K67JsHcl7DqmS46JAEKPLF53X8VSPLEoBTKrk4kipScZwogzpIvN4K1Em5TxeL80qap58nWUla22zyrkXfenlOHSLEpZx-OeC4e0ICCMyGJhBaJm2-WZVr6zm8Y5u6MDPEVI3JOmV17xMNqV4a~Hc-4BwHD-9PslERbI909ci32V22LA64Q__') no-repeat center center;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://s3-alpha-sig.figma.com/img/aeca/06df/055276bb5348f6f3bf52dc995ac079e0?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qfOxGDWoO6STH8Z-6FdH~V8y9pki0dVo72BCP6yZLPL8EANl4Eil8QsuHpYU9g2p-OkXvG53f7P6ybpR320Dtj5nv80WqDJE8l2ZhZeDm46tA3V0Xca7M-djXEXaHPQHrwveMJTJNcbMV~NF~TuhAUMIw~MqcwwL2-3K67JsHcl7DqmS46JAEKPLF53X8VSPLEoBTKrk4kipScZwogzpIvN4K1Em5TxeL80qap58nWUla22zyrkXfenlOHSLEpZx-OeC4e0ICCMyGJhBaJm2-WZVr6zm8Y5u6MDPEVI3JOmV17xMNqV4a~Hc-4BwHD-9PslERbI909ci32V22LA64Q__') no-repeat center center;
+  background-size: cover;
+  z-index: -1; /* Ensures the background stays behind all content */
+  transform: translateZ(0); /* Prevents potential scrolling issues */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #514644;
+}
+
+.social-media img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.header-links a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.booking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.booking-form {
+  background: rgba(81, 70, 68, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+
+}
+
+.booking-form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #fff;
+  color: #000;
+}
+
+.booking-form button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.booking-form button:hover {
+  background: #444;
+}

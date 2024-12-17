@@ -1,0 +1,17 @@
+user password: Password1234
+admin password: admin1234
+
+signup & login page - background image, side image not functioning, admin cant login to the dashboard, automatic clear the input
+userHomepage - Logo, sewing service images not functioning, nav buttons not working(home-userDashboard, tailor-can be removed, bookingpage, ourservices-serviceDashboard)
+userDashboard - buttons not functioning(home-userDashboard, services-serviceDashboard, about-aboutpage, contact-contactpage, Log In,Sign Up,Get Started-create html page)
+user_service_lists - reconsider where to put this page, edit some of the functionality
+adminDashboard - revise the functionality
+booking_form - revise the background colour, description box too little
+booking_homepage - okay, revise later on
+booking_list_page - okay, revise later on
+add_time_page, time_list_page - okay, revise later on
+serviceDashboard, aboutpage, contactpage, transaction - haven't created
+
+
+User
+edit_profile.php, booking_homepage.html, payment.html, receipt.html haven't 
